@@ -1,4 +1,4 @@
 [build]
   base    = "ia-tracker-react"
-  command = "npm install && npm run build"
-  publish = "ia-tracker-react/dist"
+  command = "npm run build"
+  publish = "dist"
