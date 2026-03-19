@@ -1,17 +1,4 @@
 [build]
   base    = "ia-tracker-react"
-  command = "npm run build"
+  command = "npm install && npm run build"
   publish = "ia-tracker-react/dist"
-```
-
-> Your frontend folder is **`ia-tracker-react`** not `frontend` — that's why it's failing!
-
----
-
-## 📁 File Location
-```
-iatracker-fullstack/
-├── netlify.toml        ← update this file
-├── backend/
-├── ia-tracker-react/
-└── README.md
