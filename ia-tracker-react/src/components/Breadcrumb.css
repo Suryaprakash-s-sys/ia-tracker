@@ -1,0 +1,32 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breadcrumb-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  transition: color 0.15s;
+}
+
+.breadcrumb-label--link {
+  cursor: pointer;
+}
+
+.breadcrumb-label--link:hover {
+  color: var(--text-secondary);
+}
+
+.breadcrumb-label--active {
+  color: var(--accent);
+}

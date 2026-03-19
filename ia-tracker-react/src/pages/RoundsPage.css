@@ -1,0 +1,124 @@
+.interview-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, var(--card), var(--surface));
+  border-radius: var(--radius-xl);
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  border: 1px solid var(--border);
+}
+
+.interview-banner-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--accent), #818cf8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.3);
+  flex-shrink: 0;
+}
+
+.interview-banner-name {
+  font-family: var(--ff-head);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.interview-banner-role {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+/* Rounds List */
+.rounds-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.3s ease;
+}
+
+.round-card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color 0.2s ease, transform 0.15s ease;
+}
+
+.round-card:hover {
+  border-color: var(--diff-color, var(--accent));
+  transform: translateX(4px);
+}
+
+.round-card-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.round-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--diff-color, var(--accent)) 15%, transparent);
+  color: var(--diff-color, var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-head);
+  font-size: 13px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.round-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 5px;
+}
+
+.round-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.round-card-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Shared icon-btn (also used in InterviewsPage) */
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  transition: color 0.15s, background 0.15s;
+}
+
+.icon-btn:hover {
+  background: var(--surface);
+}
+
+.icon-btn--danger:hover {
+  color: var(--red);
+  background: var(--red-bg);
+}
