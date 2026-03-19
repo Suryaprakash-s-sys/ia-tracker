@@ -1,5 +1,5 @@
 // ─── API BASE URL ─────────────────────────────────────────────────────────────
-const BASE = "https://ia-tracker-backend.onrender.com";
+const BASE = "https://ia-tracker-backend-c84m.onrender.com";
 
 // ─── CORE REQUEST FUNCTION ────────────────────────────────────────────────────
 export const request = async (path, method = "GET", body = null) => {
